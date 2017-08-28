@@ -34,9 +34,19 @@ Now how would you find the owner of the team with an id of 4?
 Team.find_by(owner_id: 4)
 
 5. In a database that's holding students and teachers, what will be the relationship between students and teachers? Draw the schema diagram.
+Students: has_many :teachers
+Teachers: has_many :students
 6. Define foreign key, primary key, and schema.
+Foreign key- any key (use of id) that is not a tables primary key- used to link data in tables together based on relationships
+Primary key- the id for a table, usually set up using an auto-increment
+Schema- A 'roadmap' for what characteristics all the classes in the database will have.
 7. Describe the relationship between a foreign key on one table and a primary key on another table.
+A foreign key will link a table to another table, and which objects are related to which other object.
 8. What are the parts of an HTTP response?
+Start line
+Headers
+Body
+
 
 
 ### Optional Questions
