@@ -1,11 +1,14 @@
 ## Week Two - Module 2 Recap
 
-Fork this respository. Answer the questions to the best of your ability. Try to answer them with limited amount of external research. These questions cover the majority of what we've learned this week (which is a TON - YOU are a web developer!!!). 
+Fork this respository. Answer the questions to the best of your ability. Try to answer them with limited amount of external research. These questions cover the majority of what we've learned this week (which is a TON - YOU are a web developer!!!).
 
 Note: When you're done, submit a PR.
 
 1. At a high level, what is ActiveRecord? What does it do/allow you to do?
+Helper ORM to facilitate the creation and use of objects in a database
+
 2. Assume you have the following model:
+
 
 ```ruby
 class Team << ActiveRecord::Base
@@ -14,7 +17,10 @@ end
 
 What are some methods you can call on `Team`? If these methods aren't defined in the class, how do you have access to them?
 
+Team.all, Team.count- Inheriting from the Base class in Active Record gives us these methods
+
 3. Assume that in your database, a team has the following attributes: "id", "name", owner_id". How would you find the name of a team with an id of 4? Assuming your class only included the code from question 2, how could you find the owner of the same team?
+Team.find(4)
 
 4. Assume that you added a line to your `Team` class as follows:
 
@@ -25,6 +31,7 @@ end
 ```
 
 Now how would you find the owner of the team with an id of 4?
+Team.find_by(owner_id: 4)
 
 5. In a database that's holding students and teachers, what will be the relationship between students and teachers? Draw the schema diagram.
 6. Define foreign key, primary key, and schema.
