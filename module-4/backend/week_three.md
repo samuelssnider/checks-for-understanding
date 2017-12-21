@@ -32,5 +32,5 @@ There are two places that things can go wrong, sometimes its not super easy to t
 8. Describe DNS.
 When a client sends a request to find a domain, it sends the request to a domain name server which sees if it has that domain name in its caches, if it does it sends that domain name the request, if it does not it sends the request to another domain name server.
 9. What does writing clean code mean to you?
-Writing clean code means writing code that does not need any refactoring, t
+Writing clean code means writing code that does not need any refactoring.
 10. If you were building an application that models hotels, what classes would you need? What classes would be responsible for what functionality?
